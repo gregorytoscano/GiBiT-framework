@@ -1,0 +1,319 @@
+@charset 'UTF-8';
+
+/** Standard HTML5 **/
+html,body{
+	height: 100%;
+	margin: 0;
+ 	padding: 0;
+  	font-family: sans-serif;
+  	  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+/** End of Standard HTML5 **/
+
+/********** Random *********/
+.wrapper{
+	margin: 0 auto;
+	padding: 10px;
+	background-color: transparent;
+}
+
+.center-block {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.disabled{
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.spacer{
+	background-color: transparent;
+	padding: 5px;
+}
+
+.float-right{
+	float: right;
+}
+
+.float-left{
+	float: left;
+}
+
+.is-visible {
+  display: block !important; 
+}
+
+.is-hidden {
+  display: none !important; 
+}
+
+/************** Text ****************/
+.text-left {
+  	text-align: left;
+}
+.text-right {
+  	text-align: right;
+}
+.text-center {
+  	text-align: center;
+}
+.text-justify {
+  	text-align: justify;
+}
+.text-lowercase {
+  	text-transform: lowercase;
+}
+.text-uppercase {
+  	text-transform: uppercase;
+}
+.text-capitalize {
+  	text-transform: capitalize;
+}
+/** End of Text **/
+
+
+/***************** Images *********************/
+.responsive-image
+{
+	display: block;
+  	max-width: 100%;
+  	height: auto;
+}
+
+/**************** BUTTONS ********************/
+.btn-round{
+	display: block;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0;
+	background-color: inherit;
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	outline: none; 
+}
+
+.btn-square{
+	display: block;
+	cursor: pointer;
+	border: 0;
+	background-color: inherit;
+	height: 50px;
+	width: 150px;
+	font-size: 16px;
+	outline: none; 
+}
+
+.btn-lg{
+	width: 200px;
+	height: 50px;
+	font-size: 16px;
+}
+
+.btn-sm{
+	width: 100px;
+	height: 35px;
+	font-size: 14px;
+}
+	
+.btn-default{
+	background-color: #e7e7e7;
+	color: #000;
+}
+
+.btn-dark{
+	background-color: #555555;
+	color: #FFF;
+}
+
+.btn-green{
+	background-color: #4CAF50;
+	color: #FFF;
+}
+
+.btn-blue{
+	background-color: #008CBA;
+	color: #FFF;
+}
+
+.btn-red{
+	background-color: #F44336;
+	color: #FFF;
+}
+
+
+
+/************ INPUT ***************/
+.text-box{
+	display: block;
+	outline: none;
+	height: 30px;
+	width: 50%;
+	font-size: 16px;
+}
+
+.text-box-line{
+	display: block;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+	width: 50%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #555555;
+}
+
+/************* Boxes **************/
+.box {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.white-box {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+/************ Grid **************/
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+  width: 95%;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: table-row;
+}
+
+.full, .one-half, .one-third, .one-fourth, .one-fifth, .one-sixth, .one-seventh, .one-eighth, .one-ninth, .one-tenth{
+	position: relative;
+	min-height: 1px;
+	display: table-cell;
+}
+
+.full{
+	width: 100%;
+}
+
+.one-half {
+	float: left;
+	width: 50%;
+}
+
+.one-third{
+	float: left;
+	width: 33.333333%;
+}
+
+.one-fourth{
+	float: left;
+	width: 25%;
+}
+
+.one-fifth{
+	float: left;
+	width: 20%;
+}
+
+.one-sixth{
+	float: left;
+	width: 16.666667%;
+}
+
+.one-seventh{
+	float: left;
+	width: 14.258143%;
+}
+
+.one-eighth{
+	float: left;
+	width: 12.5%;
+}
+
+.one-ninth{
+	float: left;
+	width: 11.111111%;
+}
+
+.one-tenth{
+	float: left;
+	width: 10%;
+}
+
+.three-fourth {
+	float: left;
+	width: 75%;
+}
+
+@media (max-width: 768px) {
+.container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.full{
+	width: 100%;
+}
+
+.one-half {
+	width: 100%;
+}
+
+.one-third{
+	width: 100%;
+}
+
+.one-fourth{
+	width: 100%;
+}
+
+.one-fifth{
+	width: 50%;
+}
+
+.one-sixth{
+	width: 50%;
+}
+
+.one-seventh{
+	width: 50%;
+}
+
+.one-eighth{
+	width: 25%;
+}
+
+.one-ninth{
+	width: 20%;
+}
+
+.one-tenth{
+	width: 20%;
+}
+
+.three-fourth {
+	width: 100%;
+}
+}
